@@ -101,38 +101,6 @@ This project covers several important ROS2 concepts:
 
 ---
 
-# Custom Service Definition
-
-File:
-
-```bash
-my_service_interfaces/srv/ResetCounter.srv
-```
-
-Service definition:
-
-```text
-int64 reset_value
----
-bool success
-string message
-```
-
-## Request
-
-| Field       | Type  | Description       |
-| ----------- | ----- | ----------------- |
-| reset_value | int64 | New counter value |
-
-## Response
-
-| Field   | Type   | Description                    |
-| ------- | ------ | ------------------------------ |
-| success | bool   | Operation success status       |
-| message | string | Informational response message |
-
----
-
 # Service Server
 
 The server node:
@@ -218,10 +186,10 @@ ros2 run my_service_pkg reset_counter_server
 Expected output:
 
 ```text
-[INFO] Reset Counter Service Started
 ```
 
-![Service Server Output](Screenshot%20from%202026-05-06%2016-28-41.png)
+![ROS2 Service Communication](Screenshot%20from%202026-05-06%2016-52-41.png)
+
 
 ---
 
@@ -233,6 +201,10 @@ Open terminal 2:
 source install/setup.bash
 ros2 run my_service_pkg reset_counter_client
 ```
+![Service Client Output](Screenshot%20from%202026-05-06%2016-52-28.png)
+
+
+```
 
 Expected output:
 
@@ -240,7 +212,7 @@ Expected output:
 Success: True
 Message: Counter reset to 100
 ```
-
+![Service Server Output](Screenshot%20from%202026-05-06%2016-28-41.png)
 ---
 
 # ROS2 Command-Line Verification
@@ -351,7 +323,7 @@ Possible future enhancements:
 
 ## Omkar Honrao
 
-Electrical Engineering Student | ROS2 & Robotics Enthusiast
+Robotics Reasearch intern | ROS2 & AI Enthusiast
 
 ### Areas of Interest
 
