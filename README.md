@@ -221,6 +221,8 @@ Expected output:
 [INFO] Reset Counter Service Started
 ```
 
+![Service Server Output](Screenshot%20from%202026-05-06%2016-28-41.png)
+
 ---
 
 ## Run Service Client
