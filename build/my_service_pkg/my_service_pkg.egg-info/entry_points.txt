@@ -1,0 +1,4 @@
+[console_scripts]
+reset_counter_client = my_service_pkg.reset_counter_client:main
+reset_counter_server = my_service_pkg.reset_counter_server:main
+
